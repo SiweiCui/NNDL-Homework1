@@ -1,0 +1,1 @@
+python visualization.py --model_path trained_models.npz --hidden_size 512 --activation relu --output_dir viz_results
