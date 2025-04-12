@@ -1,0 +1,1 @@
+python test.py --model_path D:\Desktop\神经网络与深度学习\my_homework1\trained_models.npz --data_path ./cifar-10-batches-py --hidden_size 512 --activation relu

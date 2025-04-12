@@ -1,0 +1,1 @@
+python grid-search.py --learning_rates 0.1 0.01 0.0001 --hidden_sizes 256 512 --l2_lambdas 0.001 0.0001 --data_path ./cifar-10-batches-py --output_dir ./grid_search

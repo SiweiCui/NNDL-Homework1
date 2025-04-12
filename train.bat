@@ -1,0 +1,1 @@
+python train.py --epochs 100 --data_path cifar-10-batches-py --model_save_path ./trained_models --plot_save_path ./plots
