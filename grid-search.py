@@ -106,6 +106,7 @@ def main():
     parser.add_argument('--learning_rates', nargs='+', type=float, required=True)
     parser.add_argument('--hidden_sizes', nargs='+', type=int, required=True)
     parser.add_argument('--l2_lambdas', nargs='+', type=float, required=True)
+    parser.add_argument('--activation', nargs='+', type=str, required=True)
     parser.add_argument('--data_path', type=str, required=True)
     parser.add_argument('--output_dir', type=str, default='grid_search_results')
     args = parser.parse_args()
@@ -122,7 +123,7 @@ def main():
         'learning_rate': args.learning_rates,
         'hidden_size': args.hidden_sizes,
         'l2_lambda': args.l2_lambdas,
-        'activation': ['relu']  
+        'activation': args.activation
     }
     keys = param_grid.keys()
     values = (param_grid[key] for key in keys)
