@@ -87,9 +87,9 @@ def main():
     input_size = 3072
     hidden_size = 512
     output_size = 10
-    activation = 'relu'
+    activation = 'sigmoid'
     l2_lambda = 0.0001
-    lr = 0.01
+    lr = 0.1
     batch_size = 128
     lr_decay = 0.95
 
