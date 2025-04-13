@@ -97,7 +97,7 @@ def save_results(params, metrics, log_file, output_dir):
     plt.title('Accuracy Curves')
     
     # 生成唯一文件名
-    param_str = f"lr{params['learning_rate']}_hs{params['hidden_size']}_l2{params['l2_lambda']}"
+    param_str = f"lr{params['learning_rate']}_hs{params['hidden_size']}_l2{params['l2_lambda']}_act{params['activation']}"
     plt.savefig(os.path.join(output_dir, f'training_curves_{param_str}.png'))
     plt.close()
 
